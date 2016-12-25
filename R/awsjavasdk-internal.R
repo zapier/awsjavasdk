@@ -16,9 +16,7 @@
 #' @importFrom rappdirs app_dir
 .app_dir <- rappdirs::app_dir("awsjavasdk", version = packageVersion("awsjavasdk"))
 
-#' @importFrom rJava .jinit
 .onAttach <- function(libname, pkgname) {
-  rJava::.jinit()
   if (!aws_sdk_present()) {
     packageStartupMessage("awsjavasdk did not detect its own copy of the AWS SDK; you must execute install_aws_sdk() in order to download the SDK and for the package to work as expected")
   } else {
