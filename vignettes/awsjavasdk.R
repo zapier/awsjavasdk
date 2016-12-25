@@ -16,6 +16,4 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "README-"
 )
-library(awsjavasdk)
-library(lubridate)
 
