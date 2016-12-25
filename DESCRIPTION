@@ -12,6 +12,7 @@ BugReports: https://github.com/drknexus/awsjavasdk/issues
 License: GPL-2
 Imports:
     methods,
+    utils,
     rJava,
     R.utils,
     assertthat,
