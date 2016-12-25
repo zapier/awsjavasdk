@@ -1,7 +1,7 @@
 [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
-[![Travis-CI Build Status](https://travis-ci.org/drknexus/awsjavasdk.svg?branch=master)](https://travis-ci.org/drknexus/awsjavasdk)
+[![Travis-CI Build Status](https://travis-ci.org/zapier/awsjavasdk.svg?branch=master)](https://travis-ci.org/zapier/awsjavasdk)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/awsjavasdk)](https://cran.r-project.org/package=awsjavasdk)
-[![codecov.io](https://codecov.io/github/drknexus/awsjavasdk/coverage.svg?branch=master)](https://codecov.io/github/drknexus/awsjavasdk?branch=master)
+[![codecov.io](https://codecov.io/github/zapier/awsjavasdk/coverage.svg?branch=master)](https://codecov.io/github/zapier/awsjavasdk?branch=master)
 
 Why should I use it?
 --------------------
@@ -30,19 +30,24 @@ Then, you can load all java classes included in the SDK...
 
 From there, you're on your own. :)
 
+E.g.
+
+    v <- rJava::J("com.amazonaws.util.VersionInfoUtils")
+    print(v$getVersion())
+
 How do I get it?
 ----------------
 
 The current version is not on CRAN, but you can fetch an early release of the upcoming build directly from github:
 
     library(devtools)
-    install_github("drknexus/awsjavasdk")
+    install_github("zapier/awsjavasdk")
     library(awsjavasdk)
 
 Author's Note
 -------------
 
-This code was inspired by multiple web sources including MIT licensed [published code](https://code.google.com/archive/p/segue/) and a [blog post](http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/) by JD Long.
+This code was inspired by and borrowed in parts from multiple web sources including [published code](https://code.google.com/archive/p/segue/) and a [blog post](http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/) by JD Long.
 
 Roadmap
 -------
