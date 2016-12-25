@@ -13,3 +13,9 @@ test_that("sdk installs cleanly", {
   expect_true(aws_sdk_present())
   expect_true(aws_sdk_present(assert = TRUE))
 })
+
+test_that("sdk loads and is usable",  {
+  skip_on_cran()
+  load_sdk()
+  expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
+})

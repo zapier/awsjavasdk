@@ -1,5 +1,5 @@
 ---
-title: 'awsjavasdk: Boilerplate R access to the AWS Java SDK via rJava'
+title: 'awsjavasdk: Boilerplate R access to the AWS Java SDK via package:rJava'
 author: "Russell S. Pierce"
 date: '`r Sys.Date()`'
 output:
@@ -61,6 +61,11 @@ awsjavasdk::load_sdk()
 
 From there, you're on your own. :)
 
+E.g.
+```
+v <- rJava::J("com.amazonaws.util.VersionInfoUtils")
+print(v$getVersion())
+```
 
 ## How do I get it?
 
