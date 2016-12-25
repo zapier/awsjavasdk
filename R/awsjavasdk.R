@@ -61,8 +61,6 @@ aws_sdk_version <- function() {
 #'
 #' @return character
 #' @export
-#'
-#' @examples
 aws_sdk_root <- function() {
   paste0(.app_dir$data(), "/", aws_sdk_version(), "/")
 }
