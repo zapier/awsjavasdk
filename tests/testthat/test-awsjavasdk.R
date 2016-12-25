@@ -1,6 +1,7 @@
 context("awsjavasdk core functionality")
 
 test_that("test of pure testing environment", {
+  try(unlink(aws_sdk_root(), recursive = TRUE), silent = TRUE)
   expect_false(aws_sdk_present())
   expect_error(aws_sdk_present(assert = TRUE))
 })
