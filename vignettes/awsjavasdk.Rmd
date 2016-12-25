@@ -18,9 +18,9 @@ library(knitr)
 if ("github_markdown" %in% knitr::opts_knit$get("rmarkdown.pandoc.to")) {
   cat("
 [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
-[![Travis-CI Build Status](https://travis-ci.org/drknexus/awsjavasdk.svg?branch=master)](https://travis-ci.org/drknexus/awsjavasdk)
+[![Travis-CI Build Status](https://travis-ci.org/zapier/awsjavasdk.svg?branch=master)](https://travis-ci.org/zapier/awsjavasdk)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/awsjavasdk)](https://cran.r-project.org/package=awsjavasdk)
-[![codecov.io](https://codecov.io/github/drknexus/awsjavasdk/coverage.svg?branch=master)](https://codecov.io/github/drknexus/awsjavasdk?branch=master)
+[![codecov.io](https://codecov.io/github/zapier/awsjavasdk/coverage.svg?branch=master)](https://codecov.io/github/zapier/awsjavasdk?branch=master)
 ")
 }
 ```
@@ -73,7 +73,7 @@ The current version is not on CRAN, but you can fetch an early release of the up
 
 ```
 library(devtools)
-install_github("drknexus/awsjavasdk")
+install_github("zapier/awsjavasdk")
 library(awsjavasdk)
 ```
 
