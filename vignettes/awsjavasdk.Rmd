@@ -1,0 +1,85 @@
+---
+title: 'awsjavasdk: Boilerplate R access to the AWS Java SDK via rJava'
+author: "Russell S. Pierce"
+date: '`r Sys.Date()`'
+output:
+  rmarkdown::html_vignette: default
+  md_document:
+    variant: markdown_github
+vignette: >
+  %\VignetteIndexEntry{AWS Java SDK for R}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, results='asis'}
+# Include badges only when making the github markdown
+library(knitr)
+if ("github_markdown" %in% knitr::opts_knit$get("rmarkdown.pandoc.to")) {
+  cat("
+[![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
+[![Travis-CI Build Status](https://travis-ci.org/drknexus/awsjavasdk.svg?branch=master)](https://travis-ci.org/drknexus/awsjavasdk)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/awsjavasdk)](https://cran.r-project.org/package=awsjavasdk)
+[![codecov.io](https://codecov.io/github/drknexus/awsjavasdk/coverage.svg?branch=master)](https://codecov.io/github/drknexus/awsjavasdk?branch=master)
+")
+}
+```
+
+```{r, echo = FALSE, results = 'hide', message = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+## Why should I use it?
+
+If you are like most useRs you shouldn't.  package:awsjavasdk provides boilerplate access to all of the classes included in the AWS Java SDK (inclusive of 3rd party classes).  For most useRs this isn't user friendly enough.
+
+If you are looking for easy access to AWS resoures, this package isn't for you. Right now the best supported option for easy access is, in the author's opinion, provided by [cloudyr](https://cloudyr.github.io/packages/index.html)'s aws series of packages (some of which are already on CRAN).
+
+However, if you are feeling limited by the web api exposed by cloudyr, like building things from scratch, or like the 'safety' of directly using an approved AWS SDK, then this package may be for you - but only if you don't mind a shotgun approach.  The current version of the package loads all `.jar`s provided by the SDK.
+
+## How do I use it?
+
+Before you can load anything, you'll need to install the Java SDK.  package:awsjavasdk handles the installation location for you.  You just need to manually trigger the installation itself so that this package can be CRAN compliant.
+
+```
+library(awsjavasdk)
+
+# Install the sdk if it hasn't been installed yet
+if (!awsjavasdk::aws_sdk_present()) {
+  awsjavasdk::install_aws_sdk()
+}
+```
+
+Then, you can load all java classes included in the SDK...
+```
+awsjavasdk::load_sdk()
+```
+
+From there, you're on your own. :)
+
+
+## How do I get it?
+
+The current version is not on CRAN, but you can fetch an early release of the upcoming build directly from github:
+
+```
+library(devtools)
+install_github("drknexus/awsjavasdk")
+library(awsjavasdk)
+```
+
+## Author's Note
+This code was inspired by and borrowed in parts from multiple web sources including [published code](https://code.google.com/archive/p/segue/) and a [blog post](http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/) by JD Long.
+
+## Roadmap
+
+* Add support for displaying SDK install location
+* Add support for installing a new SDK version if available; always load the latest SDK
+* Add support for listing available SDK versions
+* Add support for loading a specific SDK version
+* Add support for listing `jar`s
+* Add support for loading specific `jar`s
