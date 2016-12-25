@@ -28,13 +28,13 @@ install_aws_sdk <- function() {
 
 #' Load AWS Java SDK
 #'
+#'
 #' @return As rJava::.jpacakge(), invisible TRUE if the initialization was successful 
 #' @export
-#' @importFrom rJava .jpacakge
+#' @importFrom rJava .jpackage J
 load_sdk <- function() {
-  attach(rJava::javaImport(c("java.lang", "java.io")))
   # Add class paths for all .jar in the sdk directory
-  .jpackage("awsjavasdk", jars = grep(".jar", list.files(aws_sdk_root(), recursive = TRUE, full.names = TRUE), value = TRUE))
+  rJava::.jpackage("awsjavasdk", morePaths = grep(".jar", list.files(aws_sdk_root(), recursive = TRUE, full.names = TRUE), value = TRUE))
   NULL
 }
 
