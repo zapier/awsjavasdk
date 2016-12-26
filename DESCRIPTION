@@ -6,7 +6,7 @@ Date: 2016-12-18
 Authors@R: c(
   person("Russell", "Pierce", role = c("aut", "cre"), email = "russell.pierce@zapier.com")
   )
-Description: Provides boilerplate access to all of the classes included in the AWS Java SDK.
+Description: Provides boilerplate access to all of the classes included in the AWS Java SDK via package:rJava.
 URL: https://github.com/zapier/awsjavasdk
 BugReports: https://github.com/zapier/awsjavasdk/issues
 License: GPL-2
