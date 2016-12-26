@@ -1,3 +1,7 @@
-2016-12-18  Russell S. Pierce  <russell.s.pierce@gmail.com>
+2016-12-25  Russell S. Pierce  <russell.pierce@zapier.com>
+* Released to private git repos
+* Minor changes to loading mechanisms
+
+2016-12-18  Russell S. Pierce  <russell.pierce@zapier.com>
 * Created vignette to stake out package aims
-* Initial commit to git
+* Initial code drafts

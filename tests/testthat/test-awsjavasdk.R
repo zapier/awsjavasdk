@@ -7,6 +7,12 @@ test_that("test of pure testing environment", {
   expect_error(aws_sdk_present(assert = TRUE))
 })
 
+test_that("test message when install is needed", {
+  skip_on_cran()
+  detach("package:awsjavasdk")
+  library(awsjavasdk)
+})
+
 test_that("sdk installs cleanly", {
   skip_on_cran()
   install_aws_sdk()
