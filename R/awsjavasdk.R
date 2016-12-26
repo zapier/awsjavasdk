@@ -9,6 +9,7 @@
 #' @export
 #'
 #' @importFrom R.utils mkdirs
+#' @importFrom utils unzip download.file
 #' @examples 
 #' \dontrun{
 #' install_aws_sdk()
