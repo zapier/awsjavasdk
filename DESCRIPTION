@@ -1,6 +1,6 @@
 Package: awsjavasdk
 Type: Package
-Title: Boilerplate R access to the AWS Java SDK
+Title: Boilerplate R Access to the AWS Java SDK
 Version: 0.1.0
 Date: 2016-12-18
 Authors@R: c(
