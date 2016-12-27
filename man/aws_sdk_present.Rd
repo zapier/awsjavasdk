@@ -19,8 +19,6 @@ Confirm presence of core SDK jar
 Note that this only checks for the ability to locate the core AWS SDK jar
 }
 \examples{
-\dontrun{
 aws_sdk_present()
-}
 }
 
