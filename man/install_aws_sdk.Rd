@@ -4,7 +4,10 @@
 \alias{install_aws_sdk}
 \title{Install the AWS Java SDK}
 \usage{
-install_aws_sdk()
+install_aws_sdk(root = .package_envir_get("sdk_file_root"))
+}
+\arguments{
+\item{root}{The root folder that will contain the SDK}
 }
 \value{
 boolean; TRUE if the SDK can now be located, FALSE if it can not be located
