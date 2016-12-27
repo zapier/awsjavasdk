@@ -17,6 +17,7 @@
 R CMD check results
 0 errors | 0 warnings | 1 notes
 
+Notes:
 * New Submission
 * 404 error for URL that isn't valid yet, but will be on completion of CRAN submission: https://cran.r-project.org/package=awsjavasdk
 
