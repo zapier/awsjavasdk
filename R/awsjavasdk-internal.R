@@ -18,7 +18,7 @@
 
 .onAttach <- function(libname, pkgname) {
   if (!aws_sdk_present()) {
-    packageStartupMessage("awsjavasdk did not detect its own copy of the AWS SDK; you must execute install_aws_sdk() in order to download the SDK and for the package to work as expected")
+    packageStartupMessage(paste0("awsjavasdk did not detect its own copy of the AWS SDK; you must execute install_aws_sdk() in order to download the SDK and for the package to work as expected.  Please note that install_aws_sdk() will download and unpack files to '", .app_dir$data(), "' without any further confirmation."))
   } else {
     packageStartupMessage("The AWS Java SDK is ready to load, run awsjavasdk::load_sdk() to load the AWS .jars")
   }

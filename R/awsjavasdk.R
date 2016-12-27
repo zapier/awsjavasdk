@@ -24,6 +24,7 @@ install_aws_sdk <- function() {
   unzip(tempzip, exdir = .app_dir$data())
   aws_sdk_present(assert = TRUE)
   unlink(tempzip)
+  message("AWS SDK and associated direct and third-party LICENSE files can be found in this directory (as associated subdirectories): ", aws_sdk_root())
   return(aws_sdk_present())
 }
 
