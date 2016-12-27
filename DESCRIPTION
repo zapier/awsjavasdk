@@ -1,7 +1,7 @@
 Package: awsjavasdk
 Type: Package
 Title: Boilerplate R Access to the AWS Java SDK
-Version: 0.1.0
+Version: 0.2.0
 Date: 2016-12-18
 Authors@R: c(
   person("Russell", "Pierce", role = c("aut", "cre"), email = "russell.pierce@zapier.com")
