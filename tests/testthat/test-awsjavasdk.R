@@ -26,6 +26,14 @@ test_that("sdk loads and is usable",  {
   expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
 })
 
+test_that("sdk loads and is usable after a detach",  {
+  skip_on_cran()
+  detach("package:awsjavasdk")
+  library(awsjavasdk)
+  load_sdk()
+  expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
+})
+
 test_that("Alternate install location",  {
   # CRAN Requires that the user be able to specify their own install location.
   # This test covers that logic, 
@@ -54,6 +62,15 @@ test_that("Alternate install location",  {
   expect_true(aws_sdk_present())
   
   # Does it all come together and work?
+  load_sdk()
+  expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
+})
+
+test_that("sdk loads and is usable after a detach in an alternate location",  {
+  detach("package:awsjavasdk")
+  library(awsjavasdk)
+  alt_install <- paste0(tempdir(),"/awsjavasdk")
+  set_sdk_file_root(alt_install, confirm = TRUE)
   load_sdk()
   expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
 })
