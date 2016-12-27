@@ -1,5 +1,18 @@
 ## awsjavasdk 0.0.1 Release
 
+## Policy Issues/Discussion
+
+The purpose of this package is to make it substantially easier to write R code against Amazon Web Services by leveraging the Java SDK Amazon maintains. 
+I hope that you will find the steps I've taken sufficient to meet the requirements of the CRAN Repository Policy.  If I've fallen short, I appologize and look forward to guidance as to how to, if possible, make this package compliant.
+
+### File Storage Outside R Session's Temporary Directory
+I am seeking an exception to the requirement that "packages should not write in the users’ home filespace, nor anywhere else on the file system apart from the R session’s temporary directory" requirement. I obtain confirmation from the user regarding installation intent by requiring an explicit call to `awsjavasdk::install_aws_sdk()` function. A `packageStartupMessage` warns users about the target directory and the lack of interactive confirmation `.onAttach`.  The reason I do not explicitly require an interactive session to call this function as I anticipate that this package will find usage in non-interactive environments. Another user explicit function call to `awsjavasdk::load_sdk()` is required to load the associated files in the package::rJava JVM.
+
+### Licensing and Clear and Unambiguous Authorship 
+This package downloads and unpacks the AWS Java SDK ([Apache License 2.0](https://github.com/aws/aws-sdk-java/blob/master/LICENSE.txt)) as well as associated third-party packages directly from Amazon to a user-specific data dir (using package:rappdirs to identify a suitable pro-social loation). 
+
+Users are notified about that location and that the corresponding LICENSE files can be found there.
+
 ## Test environments
 * local OS X install
  * R 3.3.2
