@@ -1,4 +1,4 @@
-## awsjavasdk 0.0.1 Release
+## awsjavasdk 0.2.0 Release
 
 ## Resubmission
 
