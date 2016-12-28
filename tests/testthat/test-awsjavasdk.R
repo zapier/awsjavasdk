@@ -10,7 +10,7 @@ test_that("test of pure testing environment", {
 test_that("test message when install is needed", {
   skip_on_cran()
   detach("package:awsjavasdk")
-  library(awsjavasdk)
+  expect_message(library(awsjavasdk))
 })
 
 test_that("sdk installs cleanly", {
@@ -49,6 +49,7 @@ test_that("Alternate install location",  {
   
   # make a file in the alternate location,
   #   we'd like to throw an error if a user tries to use a location that isn't really safe
+  try(unlink(alt_install, recursive = TRUE), silent = TRUE)
   dir.create(alt_install)
   writeLines(LETTERS, not_empty_file)
   expect_error(install_aws_sdk(alt_install))
