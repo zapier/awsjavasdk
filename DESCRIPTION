@@ -11,7 +11,6 @@ URL: https://github.com/zapier/awsjavasdk
 BugReports: https://github.com/zapier/awsjavasdk/issues
 License: GPL-2
 Imports:
-    methods,
     utils,
     rJava,
     R.utils,
