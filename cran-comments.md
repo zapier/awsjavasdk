@@ -17,7 +17,7 @@ In response to Kurt Hornik's comments:
 
 I have updated the description.  
 
-I now define AWS and SDK and place the abreviations in parens (because I anticipate people will frequently search for the abreviations).  I have enclosed rJava and AWS in single quotes as requested.  I have added the following expository text to the description:
+I now define AWS and place the abreviations in parens (because I anticipate people will frequently search for the abreviations).  I have enclosed rJava and AWS in single quotes as requested.  I have added the following expository text to the description:
 
 > According to Amazon, the 'SDK helps take the complexity out of coding by providing Java APIs for many AWS services including Amazon S3, Amazon EC2, DynamoDB, and more'.  You can read more about the included Java code on Amazon's website <https://aws.amazon.com/sdk-for-java/>.
 
