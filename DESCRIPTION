@@ -1,12 +1,12 @@
 Package: awsjavasdk
 Type: Package
-Title: Boilerplate R Access to the Amazon Web Services (AWS) Java Software Development Kit (SDK)
+Title: Boilerplate R Access to the Amazon Web Services ('AWS') Java Software Development Kit (SDK)
 Version: 0.2.0
-Date: 2016-12-18
+Date: 2016-12-31
 Authors@R: c(
   person("Russell", "Pierce", role = c("aut", "cre"), email = "russell.pierce@zapier.com")
   )
-Description: Provides boilerplate access to all of the classes included in the Amazon Web Services (AWS) Java Software Development Kit (SDK) via package:rJava.  According to Amazon, the 'SDK helps take the complexity out of coding by providing Java APIs for many AWS services including Amazon S3, Amazon EC2, DynamoDB, and more'.  You can read more about the included Java code on Amazon's website <https://aws.amazon.com/sdk-for-java/>.
+Description: Provides boilerplate access to all of the classes included in the Amazon Web Services ('AWS') Java Software Development Kit (SDK) via package:'rJava'.  According to Amazon, the 'SDK helps take the complexity out of coding by providing Java APIs for many AWS services including Amazon S3, Amazon EC2, DynamoDB, and more'.  You can read more about the included Java code on Amazon's website <https://aws.amazon.com/sdk-for-java/>.
 URL: https://github.com/zapier/awsjavasdk
 BugReports: https://github.com/zapier/awsjavasdk/issues
 License: GPL-2

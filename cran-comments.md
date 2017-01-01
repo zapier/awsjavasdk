@@ -1,5 +1,26 @@
 ## awsjavasdk 0.2.0 Release
 
+## Resubmission 2
+
+In response to Kurt Hornik's comments:
+
+> We get
+> 
+> Possibly mis-spelled words in DESCRIPTION:
+>   AWS (3:36, 9:80)
+>   rJava (9:105)
+> 
+> Pls fix: put these into single quotes, I guess.
+> 
+> Also, can you pls use the Description to explain 'AWS Java SDK' in more
+> detail?  Perhaps give a web pointer, written as <http://....>?
+
+I have updated the description.  
+
+I now define AWS and SDK and place the abreviations in parens (because I anticipate people will frequently search for the abreviations).  I have enclosed rJava and AWS in single quotes as requested.  I have added the following expository text to the description:
+
+> According to Amazon, the 'SDK helps take the complexity out of coding by providing Java APIs for many AWS services including Amazon S3, Amazon EC2, DynamoDB, and more'.  You can read more about the included Java code on Amazon's website <https://aws.amazon.com/sdk-for-java/>.
+
 ## Resubmission
 
 In response to Uwe Ligges' comments:
