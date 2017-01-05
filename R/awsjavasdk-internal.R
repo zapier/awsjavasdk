@@ -17,8 +17,9 @@
 .app_dir <- rappdirs::app_dir("awsjavasdk", version = packageVersion("awsjavasdk"))
 
 .onAttach <- function(libname, pkgname) {
+  set_sdk_file_root()
   if (!aws_sdk_present()) {
-    packageStartupMessage("awsjavasdk did not detect its own copy of the AWS SDK; you must execute install_aws_sdk() in order to download the SDK and for the package to work as expected")
+    packageStartupMessage(paste0("awsjavasdk did not detect its own copy of the AWS SDK. You must execute install_aws_sdk() in order to download the SDK and for the package to work as expected. If you've previously installed to a non-standard location, call set_sdk_file_root({{your alt_install root}}, confirm = TRUE) to point this package to that location and then run awsjavasdk::load_sdk()"))
   } else {
     packageStartupMessage("The AWS Java SDK is ready to load, run awsjavasdk::load_sdk() to load the AWS .jars")
   }
