@@ -29,5 +29,3 @@ Suggests:
     rmarkdown
 RoxygenNote: 5.0.1
 VignetteBuilder: knitr
-URL: https://github.com/zapier/awsjavasdk
-BugReports: https://github.com/zapier/awsjavasdk/issues
