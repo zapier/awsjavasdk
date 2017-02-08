@@ -2,9 +2,9 @@ Package: awsjavasdk
 Type: Package
 Title: Boilerplate R Access to the Amazon Web Services ('AWS') Java SDK
 Version: 0.2.1
-Date: 2016-12-31
+Date: 2017-01-15
 Authors@R: c(
-  person("Russell", "Pierce", role = c("aut", "cre"), email = "russell.pierce@zapier.com")
+  person("Russell S.", "Pierce", role = c("aut", "cre"), email = "russell.pierce@zapier.com")
   )
 Description: Provides boilerplate access to all of the classes included in the 
     Amazon Web Services ('AWS') Java Software Development Kit (SDK) via 
