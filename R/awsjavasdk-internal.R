@@ -18,6 +18,9 @@
 
 .onLoad <- function(libname, pkgname) {
   set_sdk_file_root()
+  if (!aws_sdk_present()) {
+    install_aws_sdk()
+  }
 }
 
 .onAttach <- function(libname, pkgname) {
