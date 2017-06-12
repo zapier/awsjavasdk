@@ -12,4 +12,3 @@ character
 \description{
 Get the root directory for the AWS Java SDK
 }
-

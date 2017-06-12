@@ -21,4 +21,3 @@ Note that this only checks for the ability to locate the core AWS SDK jar
 \examples{
 aws_sdk_present()
 }
-

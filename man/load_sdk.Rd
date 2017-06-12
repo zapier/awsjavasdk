@@ -12,4 +12,3 @@ As rJava::.jpacakge(), invisible TRUE if the initialization was successful
 \description{
 Load AWS Java SDK
 }
-

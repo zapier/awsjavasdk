@@ -23,4 +23,3 @@ If the Java SDK is already present,
 install_aws_sdk()
 }
 }
-

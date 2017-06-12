@@ -17,4 +17,3 @@ Specify an alternate root directory in which to store and retreieve the SDK.
 \note{
 This feature is required by the CRAN maintainers.  Although it is useful, it has not been as thoroughly tested as using the default package selected directory.
 }
-
