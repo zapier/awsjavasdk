@@ -1,9 +1,5 @@
 ## awsjavasdk 0.2.1 Release
 
-## Usability Change
-
-Following the pattern of package:AWR, awsjavasdk now takes installation of the package as implicit permission to download and install the AWS Java SDK required for the package to operate.  As with AWR, this approach is taken because the AWS Java SDK is too large and changes too frequently to include on CRAN.
-
 ## Test environments
 * local OS X install
  * R 3.3.2

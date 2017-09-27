@@ -18,13 +18,9 @@
 
 .onLoad <- function(libname, pkgname) {
   set_sdk_file_root()
-  if (!aws_sdk_present()) {
-    install_aws_sdk()
-  }
 }
 
 .onAttach <- function(libname, pkgname) {
-  set_sdk_file_root()
   if (!aws_sdk_present()) {
     packageStartupMessage(paste0("awsjavasdk did not detect its own copy of the AWS SDK. You must execute install_aws_sdk() in order to download the SDK and for the package to work as expected. If you've previously installed to a non-standard location, call set_sdk_file_root({{your alt_install root}}, confirm = TRUE) to point this package to that location and then run awsjavasdk::load_sdk()"))
   } else {
