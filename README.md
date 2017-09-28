@@ -12,6 +12,8 @@ If you are looking for easy access to AWS resoures, this package isn't for you. 
 
 However, if you are feeling limited by the web api exposed by cloudyr, like building things from scratch, or like the 'safety' of directly using an approved AWS SDK, then this package may be for you - but only if you don't mind a shotgun approach. The current version of the package loads all `.jar`s provided by the SDK.
 
+As an alternative also consider [package:AWR](https://cran.r-project.org/package=AWR) which gives you finer grained control over which version of the AWS SDK you use and auto-installs the SDK.  This package is suitable if you always want to develop against the bleeding edge SDK and for legacy purposes.
+
 How do I use it?
 ----------------
 
