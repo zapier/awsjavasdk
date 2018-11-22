@@ -18,6 +18,7 @@ matrix:
   - os: osx
     r: release
     latex: false
+    jdk: openjdk8
 
 r_github_packages:
   - jimhester/covr
