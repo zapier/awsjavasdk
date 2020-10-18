@@ -1,7 +1,14 @@
+![Lifecycle: Superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)
 [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![Travis-CI Build Status](https://travis-ci.org/zapier/awsjavasdk.svg?branch=master)](https://travis-ci.org/zapier/awsjavasdk)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/awsjavasdk)](https://cran.r-project.org/package=awsjavasdk)
 [![codecov.io](https://codecov.io/github/zapier/awsjavasdk/coverage.svg?branch=master)](https://codecov.io/github/zapier/awsjavasdk?branch=master)
+
+Superseded?
+--------------------
+
+I (the author) no longer use this package.  If you'd like to take over ownership/maintence, please reach out.  If you are comfortable with Python, I'd recommend {botor} as a replacement.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.
+
 
 Why should I use it?
 --------------------

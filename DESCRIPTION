@@ -1,8 +1,8 @@
 Package: awsjavasdk
 Type: Package
 Title: Boilerplate R Access to the Amazon Web Services ('AWS') Java SDK
-Version: 0.2.1
-Date: 2017-06-12
+Version: 0.2.2
+Date: 2020-10-17
 Authors@R: c(
   person("Russell S.", "Pierce", role = c("aut", "cre"), email = "russell.pierce@zapier.com")
   )
@@ -27,5 +27,5 @@ Suggests:
     covr,
     knitr,
     rmarkdown
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.1
 VignetteBuilder: knitr

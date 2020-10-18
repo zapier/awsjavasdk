@@ -1,3 +1,8 @@
+# aws_java_sdk 0.2.2
+
+* I'm soft deprecating the package
+* Extending the timeout on the SDK download to help on CRAN machines
+
 # aws_java_sdk 0.2.1
 
 * Bug fix.  I now attempt to find the sdk_file_root() on load rather than attach.  This allows packages depending on awsjavasdk to use aws_sdk_present() correctly.

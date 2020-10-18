@@ -6,6 +6,7 @@
 #'   file present at https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip
 #' 
 #' @param root The root folder that will contain the SDK
+#' @param timeout numeric; the time in seconds to be willing to wait for the download
 #' @return boolean; TRUE if the SDK can now be located, FALSE if it can not be located
 #' @export
 #'
@@ -15,7 +16,7 @@
 #' \dontrun{
 #' install_aws_sdk()
 #' }
-install_aws_sdk <- function(root = .package_envir_get("sdk_file_root")) {
+install_aws_sdk <- function(root = .package_envir_get("sdk_file_root"), timeout = 180) {
   if (root != .package_envir_get("sdk_file_root")) {
     set_sdk_file_root(root)
   }
@@ -23,7 +24,7 @@ install_aws_sdk <- function(root = .package_envir_get("sdk_file_root")) {
   unlink(list.files(.package_envir_get("sdk_file_root"),full.names = TRUE), recursive = TRUE)
   #do a check here for existing sdk of version
   tempzip <- tempfile()
-  download.file("https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip", tempzip)
+  download.file("https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip", tempzip, timeout=timeout)
   R.utils::mkdirs(.package_envir_get("sdk_file_root"), mustWork = TRUE)
   unzip(tempzip, exdir = .package_envir_get("sdk_file_root"))
   aws_sdk_present(assert = TRUE)
@@ -33,12 +34,13 @@ install_aws_sdk <- function(root = .package_envir_get("sdk_file_root")) {
 }
 
 #' Load AWS Java SDK
-#'
-#'
+#' 
 #' @return As rJava::.jpacakge(), invisible TRUE if the initialization was successful 
 #' @export
 #' @importFrom rJava .jpackage J
+#' @importFrom lifecycle deprecate_soft
 load_sdk <- function() {
+  lifecycle::deprecate_soft("0.2.2", "load_sdk()", details = "The author of awsjavasdk no longer uses it.  If you'd like to take over ownership/maintence, please reach out.  If you are comfortable with Python, I'd recommend {botor} as a replacement.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.")
   # Add class paths for all .jar in the sdk directory
   rJava::.jpackage("awsjavasdk", morePaths = grep(".jar", list.files(aws_sdk_root(), recursive = TRUE, full.names = TRUE), value = TRUE))
   NULL
