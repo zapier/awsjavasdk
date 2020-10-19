@@ -7,7 +7,6 @@ language: r
 
 before_install:
 - export TZ=Europe/Vienna
-- sudo R CMD javareconf
 
 #matrix: 3x Linux, 1x OS X
 matrix:
