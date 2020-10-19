@@ -21,7 +21,8 @@ Imports:
     rJava,
     R.utils,
     assertthat,
-    rappdirs
+    rappdirs,
+    lifecycle
 Suggests:
     testthat,
     covr,

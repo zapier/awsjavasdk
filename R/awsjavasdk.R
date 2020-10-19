@@ -40,7 +40,7 @@ install_aws_sdk <- function(root = .package_envir_get("sdk_file_root"), timeout 
 #' @importFrom rJava .jpackage J
 #' @importFrom lifecycle deprecate_soft
 load_sdk <- function() {
-  lifecycle::deprecate_soft("0.2.2", "load_sdk()", details = "The author of awsjavasdk no longer uses it.  If you'd like to take over ownership/maintence, please reach out.  If you are comfortable with Python, I'd recommend {botor} as a replacement.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.")
+  deprecate_soft("0.2.2", "load_sdk()", details = "The author of awsjavasdk no longer uses it.  If you'd like to take over ownership/maintence, please reach out.  If you are comfortable with Python, I'd recommend {botor} as a replacement.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.")
   # Add class paths for all .jar in the sdk directory
   rJava::.jpackage("awsjavasdk", morePaths = grep(".jar", list.files(aws_sdk_root(), recursive = TRUE, full.names = TRUE), value = TRUE))
   NULL
