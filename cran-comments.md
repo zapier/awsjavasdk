@@ -1,6 +1,6 @@
 ## awsjavasdk 0.2.2 Release
 
-This release extends the timeout to download the SDK (and makes the timeout user configurable).  I also add some warnings that the package isn't being actively used and suggest to interactive users of the package a couple other packages they might want to switch to.
+This release extends the timeout to download the SDK (and makes the timeout user configurable).  I also add some warnings that the package isn't being actively used and suggest to interactive users of the package a couple other packages they might want to switch to.  This submission is late, so awsjavasdk is currently removed/archived.
 
 ## Test environments
 * travis-ci
