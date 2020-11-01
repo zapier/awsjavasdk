@@ -1,5 +1,11 @@
 ## awsjavasdk 0.2.2 Release
 
+### Updated submission notes
+
+`http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/` changed to `https://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/` in README.md.  Sorry for the trouble! I'm not sure what I did wrong such that I didn't see that in earlier checks.
+
+### Original Submission Notes
+
 This release extends the timeout to download the SDK (and makes the timeout user configurable).  I also add some warnings that the package isn't being actively used and suggest to interactive users of the package a couple other packages they might want to switch to.  This submission is late, so awsjavasdk is currently removed/archived. 
 
 Some systems report that there are possibly mis-spelled words in DESCRIPTION:
@@ -9,7 +15,8 @@ Some systems report that there are possibly mis-spelled words in DESCRIPTION:
   SDK (3:69, 10:64, 11:49)
 ... but I affirm that these are all correct.
 
-## Test environments
+### Test environments
+
 * travis-ci
  * Platform: x86_64-pc-linux-gnu (64-bit) / Ubuntu Xenial (16.04.6 LTS)
  * R version 4.0.2 (2020-06-22)
@@ -25,7 +32,8 @@ Some systems report that there are possibly mis-spelled words in DESCRIPTION:
 * local OS X Install
  * R 4.0.2 (2020-06-22)
  
-## R CMD check results
+### R CMD check results
+
 R CMD check results
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
