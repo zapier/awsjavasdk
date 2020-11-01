@@ -56,7 +56,7 @@ The current version is not on CRAN, but you can fetch an early release of the up
 Author's Note
 -------------
 
-This code was inspired by and borrowed in parts from multiple web sources including [published code](https://code.google.com/archive/p/segue/) and a [blog post](http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/) by JD Long.
+This code was inspired by and borrowed in parts from multiple web sources including [published code](https://code.google.com/archive/p/segue/) and a [blog post](https://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/) by JD Long.
 
 Roadmap
 -------
