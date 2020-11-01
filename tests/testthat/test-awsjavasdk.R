@@ -22,7 +22,7 @@ test_that("sdk installs cleanly", {
 
 test_that("sdk loads and is usable",  {
   skip_on_cran()
-  load_sdk()
+  expect_warning(load_sdk())
   expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
 })
 
@@ -30,7 +30,7 @@ test_that("sdk loads and is usable after a detach",  {
   skip_on_cran()
   detach("package:awsjavasdk")
   library(awsjavasdk)
-  load_sdk()
+  expect_warning(load_sdk())
   expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
 })
 
@@ -63,7 +63,7 @@ test_that("Can confirm installation", {
   
 test_that("Installed at alt location can be loaded", {  
   # Does it all come together and work?
-  load_sdk()
+  expect_warning(load_sdk())
   expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
 })  
 
@@ -71,6 +71,6 @@ test_that("sdk loads and is usable after a detach in an alternate location",  {
   detach("package:awsjavasdk")
   library(awsjavasdk)
   set_sdk_file_root(alt_install, confirm = TRUE)
-  load_sdk()
+  expect_warning(load_sdk())
   expect_gt(nchar(rJava::J("com.amazonaws.util.VersionInfoUtils")$getVersion()), 0)
 })
