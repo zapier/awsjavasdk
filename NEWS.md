@@ -1,6 +1,6 @@
 # aws_java_sdk 0.2.2
 
-* I'm marking the package as [Superseded](https://www.tidyverse.org/lifecycle/#superseded).  I no longer use it and think there are better solutions available.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.  Otherwise, I'd recommend {botor} as a replacement.  If you'd like to take over ownership/maintence, please reach out.  
+* I'm marking the package as [Superseded](https://www.tidyverse.org/lifecycle/#superseded).  I no longer use it and think there are better solutions available.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.  Otherwise, I'd recommend {botor} as a replacement.  If you'd like to take over ownership/maintenance, please reach out.  
 * Extending the timeout on the SDK download to help on CRAN machines
 * Added tilde expansion to the awsjavasdk target location
 

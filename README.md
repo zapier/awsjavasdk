@@ -7,7 +7,7 @@
 Superseded?
 --------------------
 
-I (the author) no longer use this package.  If you'd like to take over ownership/maintence, please reach out.  If you are comfortable with Python, I'd recommend {botor} as a replacement.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.
+I (the author) no longer use this package.  If you'd like to take over ownership/maintenance, please reach out.  If you are comfortable with Python, I'd recommend {botor} as a replacement.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.
 
 
 Why should I use it?
@@ -15,7 +15,7 @@ Why should I use it?
 
 If you are like most useRs you shouldn't. package:awsjavasdk provides boilerplate access to all of the classes included in the AWS Java SDK (inclusive of 3rd party classes). For most useRs this isn't user friendly enough.
 
-If you are looking for easy access to AWS resoures, this package isn't for you. Right now the best supported option for easy access is, in the author's opinion, provided by [cloudyr](https://cloudyr.github.io/packages/index.html)'s aws series of packages (some of which are already on CRAN).
+If you are looking for easy access to AWS resources, this package isn't for you. Right now the best supported option for easy access is, in the author's opinion, provided by [cloudyr](https://cloudyr.github.io/packages/index.html)'s aws series of packages (some of which are already on CRAN).
 
 However, if you are feeling limited by the web api exposed by cloudyr, like building things from scratch, or like the 'safety' of directly using an approved AWS SDK, then this package may be for you - but only if you don't mind a shotgun approach. The current version of the package loads all `.jar`s provided by the SDK.
 
