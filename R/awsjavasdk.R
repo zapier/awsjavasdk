@@ -16,7 +16,7 @@
 #' \dontrun{
 #' install_aws_sdk()
 #' }
-install_aws_sdk <- function(root = .package_envir_get("sdk_file_root"), timeout = 180) {
+install_aws_sdk <- function(root = .package_envir_get("sdk_file_root"), timeout = 240) {
   if (root != .package_envir_get("sdk_file_root")) {
     set_sdk_file_root(root)
   }
@@ -26,6 +26,7 @@ install_aws_sdk <- function(root = .package_envir_get("sdk_file_root"), timeout 
   tempzip <- tempfile()
   download.file("https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip", tempzip, timeout=timeout)
   R.utils::mkdirs(.package_envir_get("sdk_file_root"), mustWork = TRUE)
+  message("Decompressing")
   unzip(tempzip, exdir = .package_envir_get("sdk_file_root"))
   aws_sdk_present(assert = TRUE)
   unlink(tempzip)
@@ -100,6 +101,9 @@ aws_sdk_present <- function(assert = FALSE) {
 #' @export
 set_sdk_file_root <- function(root = .app_dir$data(), confirm = FALSE) {
   if (root != .app_dir$data()) {
+    if (file.exists(root)) {
+      stop("You may not specify an SDK root that is the same name as an existing file")
+    }
     if (!confirm && length(list.files(root, all.files = TRUE, recursive = TRUE)) > 0) {
       stop("You may not specify an SDK root location that currently exists or has files unless you set the confirm param to TRUE")
     }
