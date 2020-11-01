@@ -101,7 +101,7 @@ aws_sdk_present <- function(assert = FALSE) {
 #' @export
 set_sdk_file_root <- function(root = .app_dir$data(), confirm = FALSE) {
   if (root != .app_dir$data()) {
-    if (file.exists(root)) {
+    if (file.exists(root) && !dir.exists(root)) {
       stop("You may not specify an SDK root that is the same name as an existing file")
     }
     if (!confirm && length(list.files(root, all.files = TRUE, recursive = TRUE)) > 0) {
