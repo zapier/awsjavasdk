@@ -91,7 +91,7 @@ aws_sdk_present <- function(assert = FALSE) {
   wrap(file.exists(paste0(aws_sdk_root(), "lib/", aws_sdk_version(), ".jar")))
 }
 
-#' Specify an alternate root directory in which to store and retreieve the SDK.
+#' Specify an alternate root directory in which to store and retrieve the SDK.
 #'
 #' @param root character a path location the contents of which may be deleted without confirmation
 #' @param confirm boolean Allows the use of a non-empty sdk_file_root
