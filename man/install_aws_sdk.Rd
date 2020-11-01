@@ -4,7 +4,7 @@
 \alias{install_aws_sdk}
 \title{Install the AWS Java SDK}
 \usage{
-install_aws_sdk(root = .package_envir_get("sdk_file_root"), timeout = 180)
+install_aws_sdk(root = .package_envir_get("sdk_file_root"), timeout = 240)
 }
 \arguments{
 \item{root}{The root folder that will contain the SDK}
