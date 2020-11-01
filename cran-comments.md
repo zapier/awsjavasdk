@@ -16,10 +16,12 @@ Some systems report that there are possibly mis-spelled words in DESCRIPTION:
  * and R version 3.6.3 (2020-02-29)
  * and R Under development (unstable) (2020-10-29 r79387)
 * rhub
+ * Ubuntu Linux 16.04 LTS, R-devel, GCC
  * Ubuntu Linux 16.04 LTS, R-release, GCC
+ x Windows, could not check, lacks rJava
 * win-builder
- * R version 3.6.3 (2020-02-29)
- ? R Under development (unstable) (2016-12-23 r71840)
+ x R version 3.6.3 (2020-02-29); could not check, lacks rJava
+ * R version 4.0.3 (2020-10-10)
 * local OS X Install
  * R 4.0.2 (2020-06-22)
  
