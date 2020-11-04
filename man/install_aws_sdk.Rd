@@ -4,10 +4,12 @@
 \alias{install_aws_sdk}
 \title{Install the AWS Java SDK}
 \usage{
-install_aws_sdk(root = .package_envir_get("sdk_file_root"))
+install_aws_sdk(root = .package_envir_get("sdk_file_root"), timeout = 240)
 }
 \arguments{
 \item{root}{The root folder that will contain the SDK}
+
+\item{timeout}{numeric; the time in seconds to be willing to wait for the download}
 }
 \value{
 boolean; TRUE if the SDK can now be located, FALSE if it can not be located

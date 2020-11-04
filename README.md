@@ -1,14 +1,21 @@
+![Lifecycle: Superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)
 [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![Travis-CI Build Status](https://travis-ci.org/zapier/awsjavasdk.svg?branch=master)](https://travis-ci.org/zapier/awsjavasdk)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/awsjavasdk)](https://cran.r-project.org/package=awsjavasdk)
 [![codecov.io](https://codecov.io/github/zapier/awsjavasdk/coverage.svg?branch=master)](https://codecov.io/github/zapier/awsjavasdk?branch=master)
+
+Superseded?
+--------------------
+
+I (the author) no longer use this package.  If you'd like to take over ownership/maintenance, please reach out.  If you are comfortable with Python, I'd recommend {botor} as a replacement.  If you're only comfortable with Java, I'd recommend {AWR} as a replacement.
+
 
 Why should I use it?
 --------------------
 
 If you are like most useRs you shouldn't. package:awsjavasdk provides boilerplate access to all of the classes included in the AWS Java SDK (inclusive of 3rd party classes). For most useRs this isn't user friendly enough.
 
-If you are looking for easy access to AWS resoures, this package isn't for you. Right now the best supported option for easy access is, in the author's opinion, provided by [cloudyr](https://cloudyr.github.io/packages/index.html)'s aws series of packages (some of which are already on CRAN).
+If you are looking for easy access to AWS resources, this package isn't for you. Right now the best supported option for easy access is, in the author's opinion, provided by [cloudyr](https://cloudyr.github.io/packages/index.html)'s aws series of packages (some of which are already on CRAN).
 
 However, if you are feeling limited by the web api exposed by cloudyr, like building things from scratch, or like the 'safety' of directly using an approved AWS SDK, then this package may be for you - but only if you don't mind a shotgun approach. The current version of the package loads all `.jar`s provided by the SDK.
 
@@ -49,7 +56,7 @@ The current version is not on CRAN, but you can fetch an early release of the up
 Author's Note
 -------------
 
-This code was inspired by and borrowed in parts from multiple web sources including [published code](https://code.google.com/archive/p/segue/) and a [blog post](http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/) by JD Long.
+This code was inspired by and borrowed in parts from multiple web sources including [published code](https://code.google.com/archive/p/segue/) and a [blog post](https://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/) by JD Long.
 
 Roadmap
 -------

@@ -6,6 +6,9 @@
   if (assertthat::is.error(res)) {
     res <- default
   }
+  if (target == "sdk_file_root") {
+    res <- path.expand(res)
+  }
   return(res)
 }
 

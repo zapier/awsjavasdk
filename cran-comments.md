@@ -1,21 +1,41 @@
-## awsjavasdk 0.2.1 Release
+## awsjavasdk 0.2.2 Release
 
-## Test environments
-* local OS X install
- * R 3.3.2
+### Updated submission notes
+
+`http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/` changed to `https://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/` in README.md.  Sorry for the trouble! I'm not sure what I did wrong such that I didn't see that in earlier checks.
+
+### Original Submission Notes
+
+This release extends the timeout to download the SDK (and makes the timeout user configurable).  I also add some warnings that the package isn't being actively used and suggest to interactive users of the package a couple other packages they might want to switch to.  This submission is late, so awsjavasdk is currently removed/archived. 
+
+Some systems report that there are possibly mis-spelled words in DESCRIPTION:
+  APIs (12:37)
+  AWS (12:51)
+  DynamoDB (13:28)
+  SDK (3:69, 10:64, 11:49)
+... but I affirm that these are all correct.
+
+### Test environments
+
 * travis-ci
- * Platform: x86_64-pc-linux-gnu (64-bit) / Ubuntu precise (12.04.5 LTS)
- * R version 3.3.1 (2016-06-21)
- * and R version 3.3.2 (2016-10-31)
- * and R version 3.2.5 (2016-04-14)
- * and R Under development (unstable) (2016-12-23 r71840)
+ * Platform: x86_64-pc-linux-gnu (64-bit) / Ubuntu Xenial (16.04.6 LTS)
+ * R version 4.0.2 (2020-06-22)
+ * and R version 3.6.3 (2020-02-29)
+ * and R Under development (unstable) (2020-10-29 r79387)
+* rhub
+ * Ubuntu Linux 16.04 LTS, R-devel, GCC
+ * Ubuntu Linux 16.04 LTS, R-release, GCC
+ x Windows, could not check, lacks rJava
 * win-builder
- * R version 3.3.2 (2016-10-31)
- * R Under development (unstable) (2016-12-23 r71840)
+ x R version 3.6.3 (2020-02-29); could not check, lacks rJava
+ * R version 4.0.3 (2020-10-10)
+* local OS X Install
+ * R 4.0.2 (2020-06-22)
+ 
+### R CMD check results
 
-## R CMD check results
 R CMD check results
-0 errors | 0 warnings | 1 notes
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
 ## Downstream dependencies
 There are no downstream dependencies at this time.

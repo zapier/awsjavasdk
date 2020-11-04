@@ -2,7 +2,7 @@
 % Please edit documentation in R/awsjavasdk.R
 \name{set_sdk_file_root}
 \alias{set_sdk_file_root}
-\title{Specify an alternate root directory in which to store and retreieve the SDK.}
+\title{Specify an alternate root directory in which to store and retrieve the SDK.}
 \usage{
 set_sdk_file_root(root = .app_dir$data(), confirm = FALSE)
 }
@@ -12,7 +12,7 @@ set_sdk_file_root(root = .app_dir$data(), confirm = FALSE)
 \item{confirm}{boolean Allows the use of a non-empty sdk_file_root}
 }
 \description{
-Specify an alternate root directory in which to store and retreieve the SDK.
+Specify an alternate root directory in which to store and retrieve the SDK.
 }
 \note{
 This feature is required by the CRAN maintainers.  Although it is useful, it has not been as thoroughly tested as using the default package selected directory.
